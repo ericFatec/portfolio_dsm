@@ -2,8 +2,8 @@
 <p style="text-align: center;">
     <img src="./ekpfoto.jpg" alt="foto" style="width: 300px; height: 300px;">
 </p>
-# Portfólio digital de Eric Kawata
-## Orientador: Fabrício Galente Marques de Carvalho
+<h1>Portfólio digital de Eric Kawata</h1>
+<h2>Orientador: Fabrício Galente Marques de Carvalho</h2>
 
 <p style="font-size: 17px;">
     Tecnologias Utilizadas:
