@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 <p align="center">
-    <img src="./mgt/ekpfoto.jpg" alt="foto" style="width: 300px; height: 300px;">
+    <img src="./mgt/IMG_20240309_191424.jpg" alt="foto" style="width: 300px; height: 300px;">
 </p>
 <h1>Portfólio digital de Eric Kawata</h1>
 <h2>Orientador: Fabrício Galente Marques de Carvalho</h2>
