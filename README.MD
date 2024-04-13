@@ -13,3 +13,5 @@
         <li>Markdown</li>
     </ul>
 </p>
+
+Validação do orientador. Fabrício Galende Marques de Carvalho 2024/01
