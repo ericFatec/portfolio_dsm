@@ -1,12 +1,12 @@
 <meta charset="UTF-8">
-<p align="center">
-    <img src="./mgt/IMG_20240412_141156.jpg" alt="foto" style="width: 20%;border-radius:50%;">
+<p align=center>
+    <img src="./mgt/IMG_20240412_141156.jpg" alt="foto" style="width: 20%;">
 </p>
 <h1>Portfólio digital de Eric Kawata</h1>
 <h2>Orientador: Fabrício Galente Marques de Carvalho</h2>
 <br>
 <section>
-    <h2 style="text-align: center;">Tecnologias Utilizadas:</h2>
+    <h2 align=center>Tecnologias Utilizadas:</h2>
     <ul style="font-size: 18px;">
         <li>GitHub</li>
         <li>Python</li>
@@ -18,7 +18,7 @@
     </ul>
 </section>
 <section>
-    <h2 align=center id="como_utilizar">Como iniciar o projeto:</h2>
+    <h2 align=center>Como iniciar o projeto:</h2>
     <ol style="font-size: 18px;">
         <li>Instale o <a href="https://www.python.org/">Python</a> mais atualizado </li>
         <li>Baixe os arquivos do projeto</li>
