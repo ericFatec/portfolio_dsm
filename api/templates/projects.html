@@ -14,13 +14,13 @@
 			<div class="postcard__text" id="text-main">
 				<h1 class="postcard__title">Projeto Greentech</h1>
 				<div class="postcard__bar"></div>
-				<div class="postcard__preview-txt collapse d-md-block" id="main-paragraph">
+				<div class="main-paragraph postcard__preview-txt collapse d-md-block" id="textGT">
                     O site GreenTech simplifica a análise de dados de estufas indoor. Unindo Flask WebApp e Dash com uma interface simplificada,
                     permite aos usuários fazer upload de arquivos CSV e visualizar gráficos detalhados. Com foco na acessibilidade,
                     ajuda a entender e otimizar o ambiente das estufas para um melhor crescimento das plantas.
                     É a ferramenta ideal para explorar e interpretar dados de forma eficiente.
                 </div>
-                <div class="collapse mt-3" id="preview">
+                <div class="collapse mt-3" id="previewGT">
                     <div class="video-container d-flex justify-content-center">
                         <video width="640" height="360" controls autoplay>
                             <source src="../static/videos/sprint1.mp4" type="video/mp4">
@@ -30,10 +30,10 @@
                 </div>
 				<ul class="postcard__tagbox">
                     <li class="tag__item d-block d-md-none">
-                        <button type="button" class="btn text-white" type="button" data-bs-toggle="collapse" data-bs-target="#main-paragraph">Descrição</button>
+                        <button type="button" class="btn text-white" id="openCardGTDesc" type="button" data-bs-toggle="collapse" data-bs-target="#textGT" onclick="clearSessionStorage()">Descrição</button>
                     </li>
 					<li class="tag__item">
-						<button type="button" class="btn text-white" id="openVideoButton" data-bs-toggle="collapse" data-bs-target="#preview" onclick="clearSessionStorage()">Preview</button>
+						<button type="button" class="btn text-white" id="openCardGTVideo" data-bs-toggle="collapse" data-bs-target="#previewGT" onclick="clearSessionStorage()">Preview</button>
 					</li>
                     <li class="tag__item">
                         <a type="button" class="btn text-white" href="https://github.com/FabioHiros/API-GreenTECH" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -42,17 +42,47 @@
 			</div>
 		</article>
 	</div>
+    <div class="container py-4">
+        <div class="d-flex flex-column align-items-center mb-3">
+            <h1 class="h1 text-center text-white" id="pageHeaderTitle">Projetos Pessoais</h1>
+            <hr class="custom-hr">
+        </div>
+		<article class="postcard dark blue" id="assistenteML">
+			<img class="postcard__img" src="#" alt="banner"/>
+			<div class="postcard__text" id="text-main">
+				<h1 class="postcard__title">Assistente de Vendas ML</h1>
+				<div class="postcard__bar"></div>
+				<div class="main-paragraph postcard__preview-txt collapse d-md-block" id="textML">
+                    O Assistente de Vendas ML é um projeto que visa criar um assistente de vendas de celular online que utiliza dados do Mercado Livre,
+                    uma das maiores plataformas de comércio eletrônico da América Latina, para fornecer aos clientes uma experiência de compra personalizada e conveniente.
+                    Combinando tecnologias de processamento de linguagem natural, banco de dados e inteligência artificial,
+                    nosso assistente de vendas visa simplificar o processo de compra de celulares, ajudando os clientes a encontrar o dispositivo perfeito para suas necessidades.
+                </div>
+                <div class="collapse mt-3" id="previewML">
+                    <div class="d-flex justify-content-center main-paragraph">
+                        Preview indisponível no momento.
+                    </div>
+                </div>
+				<ul class="postcard__tagbox">
+                    <li class="tag__item d-block d-md-none">
+                        <button type="button" class="btn text-white" id="openCardMLDesc" type="button" data-bs-toggle="collapse" data-bs-target="#textML" onclick="clearSessionStorage()">Descrição</button>
+                    </li>
+					<li class="tag__item">
+						<button type="button" class="btn text-white" id="openCardMLVideo" data-bs-toggle="collapse" data-bs-target="#previewML" onclick="clearSessionStorage()">Preview</button>
+					</li>
+                    <li class="tag__item">
+                        <a id="github-link" type="button" class="btn text-white" href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </li>
+				</ul>
+			</div>
+		</article>
+	</div>
 </section>
-<script>
-    window.addEventListener('DOMContentLoaded', function() {
-    var videoPreviewOpen = localStorage.getItem('videoPreviewOpen');
-    if (videoPreviewOpen === 'true') {
-        var button = document.getElementById('openVideoButton');
-        button.click();
-    }
-    // Clear the storage
-    localStorage.removeItem('videoPreviewOpen');
-    });
-</script>
+
+<div id="temp-message" class="temp-message text-tech">Link indisponível no momento.</div>
+
+<script src="../static/js/unavailable-message.js"></script>
+
+<script src="../static/js/open-cards.js"></script>
 
 {% endblock %}
