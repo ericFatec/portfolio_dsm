@@ -11,6 +11,12 @@ function triggerButtonClicks(previewOpen) {
 
         buttonD.click();
         buttonV.click();
+    } else if (previewOpen === 'portfolio') {
+        var buttonD = document.getElementById('openCardPFDesc');
+        var buttonV = document.getElementById('openCardPFVideo');
+
+        buttonD.click();
+        buttonV.click();
     }
 }
 
