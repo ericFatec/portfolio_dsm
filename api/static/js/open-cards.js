@@ -1,21 +1,21 @@
 function triggerButtonClicks(previewOpen) {
     if (previewOpen === 'greentech') {
         var buttonD = document.getElementById('openCardGTDesc');
-        var buttonV = document.getElementById('openCardGTVideo');
-
         buttonD.click();
+
+        var buttonV = document.getElementById('openCardGTAccordion');
         buttonV.click();
     } else if (previewOpen === 'assistenteML') {
         var buttonD = document.getElementById('openCardMLDesc');
-        var buttonV = document.getElementById('openCardMLVideo');
-
         buttonD.click();
+
+        var buttonV = document.getElementById('openCardMLAccordion');
         buttonV.click();
     } else if (previewOpen === 'portfolio') {
         var buttonD = document.getElementById('openCardPFDesc');
-        var buttonV = document.getElementById('openCardPFVideo');
-
         buttonD.click();
+        
+        var buttonV = document.getElementById('openCardPFAccordion');
         buttonV.click();
     }
 }
