@@ -99,6 +99,17 @@ body {
     font-style: normal;
 }
 
+th, td {
+  padding: 8px !important;
+  text-align: left !important;
+  text-align: center !important;
+  border: none !important;
+}
+
+tr {
+  border: none !important;
+}
+
 .main-paragraph{
   font-size: 1.2rem;
   text-justify: auto;
