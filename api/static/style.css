@@ -52,6 +52,7 @@ body {
 }
 
 #logo{
+    width: 7vw;
     margin: 2rem;
 }
 
@@ -452,6 +453,10 @@ a:hover,a:focus{
       }
     }
   }
+  #logo{
+    margin: 0.8rem;
+    width: 20vw;
+  }
 }
 @media screen and (max-width: 991.98px) {
   /* #accordion .panel-body{
@@ -461,6 +466,10 @@ a:hover,a:focus{
       }
     }
   } */
+  #logo{
+    margin: 0.8rem;
+    width: 20vw;
+  }
   #introduction{
     width: auto;
   }

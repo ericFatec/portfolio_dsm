@@ -17,6 +17,12 @@ function triggerButtonClicks(previewOpen) {
         
         var buttonV = document.getElementById('openCardPFAccordion');
         buttonV.click();
+    } else if (previewOpen === 'PS') {
+        var buttonD = document.getElementById('openCardPSDesc');
+        buttonD.click();
+        
+        var buttonV = document.getElementById('openCardPSAccordion');
+        buttonV.click();
     }
 }
 

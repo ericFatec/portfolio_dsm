@@ -42,7 +42,8 @@ def projects():
     greentech=get_project_by_id('GT')
     portfolio=get_project_by_id('PF')
     assistenteml=get_project_by_id('ML')
-    return render_template('projects.html', current_page='projects', gt=greentech, pf=portfolio, ml=assistenteml)
+    prostock=get_project_by_id('PS')
+    return render_template('projects.html', current_page='projects', gt=greentech, pf=portfolio, ml=assistenteml, ps=prostock)
 
 if __name__ == "__main__":
     app.run()
