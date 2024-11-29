@@ -1,10 +1,12 @@
 from flask import Flask, render_template
+import os
 import sqlite3
 
 app = Flask(__name__)
 
 def get_project_by_id(project_id):
-    conn = sqlite3.connect('projects.db')
+    db_path = os.path.join(os.path.dirname(__file__), 'projects.db')
+    conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
     cursor = conn.cursor()
     
